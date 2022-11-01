@@ -8,7 +8,7 @@ systemd_dir: /etc/systemd/system
 system_timezone: "Australia/Melbourne"
 
 # interface which will be used for flannel
-flannel_iface: "vmbr0"
+flannel_iface: "{{ ansible_default_ipv4.interface }}"
 
 # apiserver_endpoint is virtual ip-address which will be configured on each master
 apiserver_endpoint: "10.3.3.190"
