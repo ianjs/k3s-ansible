@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ansible-playbook site.yml -i inventory/node-cluster/hosts.ini
+ansible-playbook site.yml -i inventory/kube-cluster/hosts.ini
