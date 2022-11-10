@@ -171,6 +171,7 @@
     src: /usr/local/bin/k3s
     dest: /usr/local/bin/kubectl
     state: link
+    force: true
 
 - name: Create crictl symlink
   file:
